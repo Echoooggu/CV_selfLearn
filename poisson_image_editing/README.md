@@ -16,3 +16,4 @@ A: uint8 should be float64
 A: Should probably use MIXED gradient for poisson blending.
 
 ## Acknowledgements
+https://github.com/willemmanuel/poisson-image-editing.git
