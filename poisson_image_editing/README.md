@@ -1,8 +1,14 @@
-# 1st project: poisson image editing, with ten cases testing
-## Basic knowledge required: 
-numpy, opencv
+# 1st project: poisson image editing
+## Descriptions
+Ten cases, each with a provided source image, a target image, and potentially a mask image. If there is no mask, then draw a mask by mouse through a popped-out window.  
+Cannot manipulate where to blend the image in the target.
 
-## Potential problems:
+## Basic knowledge required
+numpy, opencv  
+
+## Algorithms
+
+## Potential problems
 ### 1. The source is black when blending into the target
 A: uint8 should be float64
 ### 2. The source is blurred within the mask region in the result.
