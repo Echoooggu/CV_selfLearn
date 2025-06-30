@@ -1,4 +1,5 @@
 # 1st project: poisson image editing
+
 ## Descriptions
 Ten cases, each with a provided source image, a target image, and potentially a mask image. If there is no mask, then draw a mask by mouse through a popped-out window.  
 Cannot manipulate where to blend the image in the target.
@@ -13,3 +14,5 @@ numpy, opencv
 A: uint8 should be float64
 ### 2. The source is blurred within the mask region in the result.
 A: Should probably use MIXED gradient for poisson blending.
+
+## Acknowledgements
