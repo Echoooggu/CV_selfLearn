@@ -1,2 +1,2 @@
-# CV_selfLearn
-Learning computer vision from scratch
+# Get started: poisson image editing
+Basic knowledge required: 
