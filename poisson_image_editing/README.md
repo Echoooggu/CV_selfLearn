@@ -29,4 +29,4 @@ A: The source image and the target image should be processed to align with each 
 
 ## Acknowledgements
 https://github.com/willemmanuel/poisson-image-editing.git  
-[2003 poisson image editing paper](https://github.com/Echoooggu/CV_selfLearn/blob/main/poisson_image_editing/2003%20poisson%20image%20editing.pdf)
+[2003 poisson image editing paper](https://github.com/Echoooggu/CV_selfLearn/blob/main/poisson_image_editing/2003_poisson_image_editing.pdf)
