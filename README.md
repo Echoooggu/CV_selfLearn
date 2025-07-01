@@ -1,2 +1,2 @@
-# CV_self-learn
+# Computer Vision Self-learn
 Learning computer vision from scratch
