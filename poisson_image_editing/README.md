@@ -7,7 +7,12 @@ Cannot manipulate where to blend the image in the target.
 ## Basic knowledge required
 numpy, opencv  
 
-## Algorithms
+## Algorithms（*mixed* poisson blending)
+### Seamless image fusion with mixed gradients (preserving dominant structures from either source or target).  
+For each pixel, select the gradient with the larger magnitude:  
+     \[
+     \nabla f_{\text{mixed}} = \arg\max_{\nabla f \in \{\nabla f_{\text{source}}, \nabla f_{\text{target}}\}} \|\nabla f\|
+     \]  
 
 ## Potential problems
 ### 1. The mask region is mostly black in the result, with blurred edges.
