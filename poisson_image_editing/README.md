@@ -17,7 +17,7 @@ numpy, opencv
 6. Solve the system using NumPy/SciPy, with the divergence of the mixed gradient field as the right-hand side.
 7. For color images, process each channel independently.
 
-ps. Mixed-gradient blending is especially useful for images containing holes (like [case4], nearly transparent images (like [case5]), and when inserting one object close to another, but not for cases like [case8]. For classic poisson image editing, simply change the maximum of the two gradients to only the gradient of the source image, with the rest of the steps remained.
+ps. Mixed-gradient blending is especially useful for images containing holes like [case4], nearly transparent images like [case5], and when inserting one object close to another, but not for cases like [case8]. For classic poisson image editing, simply change the maximum of the two gradients to only the gradient of the source image, with the rest of the steps the same.
 
 ## Potential problems
 ### 1. The mask region is mostly black in the result, with blurred edges.
