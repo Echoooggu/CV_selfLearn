@@ -17,3 +17,4 @@ A: Should probably use MIXED gradient for poisson blending.
 
 ## Acknowledgements
 https://github.com/willemmanuel/poisson-image-editing.git
+[2003 poisson image editing paper](poisson_image_editing/2003 poisson image editing.pdf)
