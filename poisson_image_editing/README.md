@@ -7,12 +7,15 @@ Cannot manipulate where to blend the image in the target.
 ## Basic knowledge required
 numpy, opencv  
 
-## Algorithms（*mixed* poisson blending)
-### Seamless image fusion with mixed gradients (preserving dominant structures from either source or target).  
-For each pixel, select the gradient with the larger magnitude:  
-     \[
-     \nabla f_{\text{mixed}} = \arg\max_{\nabla f \in \{\nabla f_{\text{source}}, \nabla f_{\text{target}}\}} \|\nabla f\|
-     \]  
+## Algorithms（*mixed*-gradient blending)
+**Seamless image fusion with mixed gradients (preserving dominant structures from either source or target). A functional optimization problem that seeks a function whose gradient closely approximates the maximum of the gradient of the source image and that of the target image.**  
+1. Obtain max(gradient of the source image, gradient of the target image)  
+2. Obtain a functional minimization problem, whose solution is exactly what we want.  
+3. The functional minimization problem can be turned into a [poisson equation](https://en.wikipedia.org/wiki/Poisson%27s_equation) (divergence of gradient = Laplacian) by using [variational methods](https://en.wikipedia.org/wiki/Variational_method_(quantum_mechanics)).  
+4. The poisson equation is also a linear equation of the desired function, i.e. the solution of the functional optimization problem.  
+5. Discretize the Laplacian operator (e.g., 5-point stencil) to form a sparse linear system.
+6. Solve the system using NumPy/SciPy, with the divergence of the mixed gradient field as the right-hand side.
+7. For color images, process each channel independently.
 
 ## Potential problems
 ### 1. The mask region is mostly black in the result, with blurred edges.
