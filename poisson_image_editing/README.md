@@ -2,7 +2,7 @@
 
 ## Descriptions
 Ten cases, each with a provided source image, a target image, and potentially a mask image. If there is no mask, then draw a mask by mouse through a popped-out window.  
-Cannot manipulate where to blend the image in the target.
+Cannot manipulate where to blend the image in the target. The python files use mixed-gradient blending, and therefore only suit some types of images.
 
 ## Basic knowledge required
 numpy, opencv  
